@@ -8,8 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { LanguageTranslationModule } from './shared/modules/language-translation/language-translation.module';
-import { EmployecomponentComponent } from './src/app/employecomponent/employecomponent.component';
-import { EmploydetailsComponent } from './employdetails/employdetails.component';
 
 
 @NgModule({
@@ -22,7 +20,7 @@ import { EmploydetailsComponent } from './employdetails/employdetails.component'
         LanguageTranslationModule,
         AppRoutingModule,
     ],
-    declarations: [AppComponent, EmployecomponentComponent, EmploydetailsComponent],
+    declarations: [AppComponent],
     providers: [AuthGuard],
     bootstrap: [AppComponent]
 })

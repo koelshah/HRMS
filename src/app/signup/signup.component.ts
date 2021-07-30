@@ -9,12 +9,12 @@ import { Data } from '@angular/router';
     animations: [routerTransition()]
 })
 export class SignupComponent implements OnInit {
-   name: string;
+    name: string;
     password: any;
     repassword: any;
     email: any;
     ArrayData: Array<any> = [];
-   id: number;
+     id: number;
      hero: Data = {
         id: '',
         name: '',
@@ -31,8 +31,6 @@ export class SignupComponent implements OnInit {
         let id = 0;
         const  user = {id: 0, name: this.hero.name, email: this.hero.email, password: this.hero.password,
         repassword: this.hero.repassword};
-        // this.ArrayData.push(user);
-        // localStorage.setItem('arraydata', JSON.stringify(this.ArrayData));
        this.ArrayData = JSON.parse(localStorage.getItem('arraydata'));
      if (this.ArrayData.length === 0 || this.ArrayData === null) {
         this.ArrayData = [];
