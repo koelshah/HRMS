@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { LanguageTranslationModule } from './shared/modules/language-translation/language-translation.module';
-import { EmployelistComponent } from './employelist/employelist.component';
+// import { EmployelistComponent } from './employelist/employelist.component';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { EmployelistComponent } from './employelist/employelist.component';
         LanguageTranslationModule,
         AppRoutingModule,
     ],
-    declarations: [AppComponent, EmployelistComponent],
+    declarations: [AppComponent],
     providers: [AuthGuard],
     bootstrap: [AppComponent]
 })

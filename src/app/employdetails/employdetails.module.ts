@@ -6,24 +6,10 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { EmploydetailsRoutingModule } from '../employdetails/employdetails-routing.module';
 import { EmploydetailsComponent } from './employdetails.component';
-import {
-  AlertComponent,
-  ButtonsComponent,
-  CollapseComponent,
-  DatePickerComponent,
-  DropdownComponent,
-  ModalComponent,
-  PaginationComponent,
-  PopOverComponent,
-  ProgressbarComponent,
-  RatingComponent,
-  TabsComponent,
-  TimepickerComponent,
-  TooltipComponent
-} from '../layout/bs-component/components';
+
 
 @NgModule({
-  declarations: [EmploydetailsComponent, DatePickerComponent],
+  declarations: [EmploydetailsComponent],
   imports: [
     CommonModule, TranslateModule, FormsModule, EmploydetailsRoutingModule, NgbModule, PageHeaderModule]
 })
